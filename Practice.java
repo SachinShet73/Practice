@@ -5,30 +5,26 @@ class Car{
     static int cost  = 1500000;
     static String name = "Nexon";
 
-    static void start()
+    void start()
     {
         System.out.println("The car has started");
     }
 
-    static void accelerate()
+    void accelerate()
     {
         System.out.println("The car has accelerated");
     }
 
-    static void stop()
+    void stop()
     {
         System.out.println("The car has stopped");
     }
 
     public static void main(String args[])
     {
-        System.out.println("The mileage of the car is %d" +mileage);
-        System.out.println("The mileage of the car is  " + cost);
-        System.out.println("The mileage of the car is  " + name);
-
-        start();
-        accelerate();
-        stop();
-
+        Car c1 = new Car();
+        c1.start();
+        c1.accelerate();
+        c1.stop();
     }
 }
