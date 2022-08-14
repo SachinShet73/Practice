@@ -3,9 +3,17 @@
 class Practice{
     public static void main(String args[])
     {
-        int a , b;
-        a = 5;
-        b = ++a + a++ + ++a + a-- + a--;
-        System.out.println(b);
-    }
+        
+        int i = 1;
+        while(i<=100)
+        {
+            System.out.println(i);
+            i++;
+            if(i==21)
+            {
+                break;
+            }
+        }
+    
+}
 }
