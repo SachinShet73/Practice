@@ -13,11 +13,12 @@ class Car{
     void accelerate()
     {
         System.out.println("The car has accelerated");
-    }
+    }                                                                                                                        
 
-    void stop()
+    int stop()
     {
         System.out.println("The car has stopped");
+        return 2;
     }
 
     public static void main(String args[])
@@ -25,6 +26,8 @@ class Car{
         Car c1 = new Car();
         c1.start();
         c1.accelerate();
-        c1.stop();
+        int number = c1.stop();
+
+        System.out.println(number);
     }
 }
