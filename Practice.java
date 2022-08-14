@@ -5,7 +5,7 @@ class Practice{
     {
         int a , b;
         a = 5;
-        b = ++a + a++ ;
+        b = ++a + a++ + ++a + a-- + a--;
         System.out.println(b);
     }
 }
