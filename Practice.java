@@ -5,8 +5,8 @@ class Practice{
     {
         
         int i = 1;
-        while(i<=100)
-        {
+        
+        do{
             System.out.println(i);
             i++;
             if(i==21)
@@ -15,5 +15,6 @@ class Practice{
             }
         }
     
+        while(i<=100);
 }
 }
