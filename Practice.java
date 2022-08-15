@@ -1,4 +1,4 @@
-//program to print 5 hashes on different lines
+//program to print a rectangle
 
 class Practice{
     public static void main(String args[])
