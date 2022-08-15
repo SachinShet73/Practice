@@ -1,4 +1,4 @@
-//Simple script to understand the properties and behavior of an object
+//program to print 5 hashes on different lines
 
 class Practice{
     public static void main(String args[])
@@ -7,7 +7,7 @@ class Practice{
 
         for(int i = 0;i<5;i++)
         {
-            System.out.print("#");
+            System.out.println("#");
         }
 }
 }
