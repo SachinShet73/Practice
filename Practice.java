@@ -1,4 +1,4 @@
-//program to print a rectangle
+
 
 class Practice{
     public static void main(String args[])
@@ -10,7 +10,7 @@ class Practice{
         {
             System.out.print(" ");
         }
-        for(int k = j;k<=5;k++)
+        for(int k = 1;k<=5;k++)
         {
             System.out.print("#");
         }
