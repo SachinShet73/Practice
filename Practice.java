@@ -6,25 +6,34 @@ class Practice{
        
         for(int row = 1;row<=5;row++)
         {
-            for(int s = 1;s<=row;s++)
+            for(int hashes = row*2-1 ;hashes>=1;hashes++)
                 {
-                    System.out.print(" ");
-                }
-            for(int h = 1;h<=11-row*2;h++)
-                {
-                    if(row==1||row==5||h==1||h==11-row*2)
-                    {
-                    System.out.print("#");
-                    }
-                    else 
-                    {
-                        System.out.print(" ");
-                    }
-                }    
-                System.out.println();
-        }
+                  System.out.print(" ");
 
+                  if(hashes == 10)
+                  {
+                    break;
+                  }
+                }
+
+            for(int hashes = 1;hashes<=row*2-1;hashes++)
+                {
+                  System.out.print("#");
+                }
+                System.out.println();
+        }     
+        for(int i = 0;i<=5;i++)
+        {
+            for(int m = 1;m<=1;m++)
+            {
+                System.out.print(" ");   
+            }    
+        for(int j = 0;j<=9;j++)
+        {
+            System.out.print("#");   
+        }
         System.out.println();
+    }
     }
 }
 
