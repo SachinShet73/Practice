@@ -1,4 +1,4 @@
-
+import javax.lang.model.util.ElementScanner14;
 
 class Practice{
     public static void main(String args[])
@@ -6,34 +6,39 @@ class Practice{
        
         for(int row = 1;row<=5;row++)
         {
-            for(int hashes = row*2-1 ;hashes>=1;hashes++)
-                {
-                  System.out.print(" ");
-
-                  if(hashes == 10)
-                  {
-                    break;
-                  }
-                }
-
-            for(int hashes = 1;hashes<=row*2-1;hashes++)
-                {
-                  System.out.print("#");
-                }
-                System.out.println();
-        }     
-        for(int i = 0;i<=5;i++)
-        {
-            for(int m = 1;m<=1;m++)
+            for(int space = row;space<=5;space++)
             {
-                System.out.print(" ");   
-            }    
-        for(int j = 0;j<=9;j++)
-        {
-            System.out.print("#");   
+                System.out.print(" ");
+            }
+            for(int hash = 1;hash<=row*2-1;hash++)
+            {
+                if(row == 1||hash == 1||hash == row*2-1)
+                {System.out.print("#");}
+                else{
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println();
         }
-        System.out.println();
-    }
+
+        for(int row = 1;row<=4;row++)
+        {
+            for(int space =1;space<=row+1;space++)
+            {
+                System.out.print(" ");
+            }
+            for(int hash = 1;hash<=9-2*row;hash++)
+            {
+                if(row == 4||hash == 1||hash == 9-2*row)
+                {System.out.print("#");}
+                else{
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println();
+        }
     }
 }
 
