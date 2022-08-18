@@ -6,33 +6,25 @@ class Practice{
        
         for(int row = 1;row<=5;row++)
         {
-            for(int col = 1;col<=5;col++ )
-        {
-            System.out.print(" ");
-        }
-        
-            for(int col2 = 1 ; col2<= 5; col2++)
-        {
-            if(row == 2||row == 3||row == 4)
-            {
-                if( col2==2|| col2==3|| col2==4)
-                {   
+            for(int s = row;s<=5;s++)
+                {
                     System.out.print(" ");
                 }
-
-                if(col2 ==1||col2==5)
-                { 
-                    System.out.print("*");
-                }
-            }
-                else
+            for(int h = 1;h<=2*row-1;h++)
                 {
-                    System.out.print("*");
-                }
+                    if(row==1||row==5||h==1||h==2*row-1)
+                    {
+                    System.out.print("#");
+                    }
+                    else 
+                    {
+                        System.out.print(" ");
+                    }
+                }    
+                System.out.println();
         }
 
         System.out.println();
     }
-}
 }
 
