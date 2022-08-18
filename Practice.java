@@ -6,13 +6,13 @@ class Practice{
        
         for(int row = 1;row<=5;row++)
         {
-            for(int s = row;s<=5;s++)
+            for(int s = 1;s<=row;s++)
                 {
                     System.out.print(" ");
                 }
-            for(int h = 1;h<=2*row-1;h++)
+            for(int h = 1;h<=11-row*2;h++)
                 {
-                    if(row==1||row==5||h==1||h==2*row-1)
+                    if(row==1||row==5||h==1||h==11-row*2)
                     {
                     System.out.print("#");
                     }
