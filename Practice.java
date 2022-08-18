@@ -12,33 +12,33 @@ class Practice{
             }
             for(int hash = 1;hash<=row*2-1;hash++)
             {
-                if(row == 1||hash == 1||hash == row*2-1)
-                {System.out.print("#");}
-                else{
-                    System.out.print(" ");
-                }
+                System.out.print("#");
             }
-
             System.out.println();
         }
 
-        for(int row = 1;row<=4;row++)
+        for(int row = 1;row<=5;row++)
         {
-            for(int space =1;space<=row+1;space++)
+            for(int space =1;space<=1;space++)
             {
                 System.out.print(" ");
             }
-            for(int hash = 1;hash<=9-2*row;hash++)
+            for(int hash = 1;hash<=3;hash++)
             {
-                if(row == 4||hash == 1||hash == 9-2*row)
-                {System.out.print("#");}
-                else{
-                    System.out.print(" ");
-                }
+                System.out.print("#");
+            }
+            for(int hash = 1;hash<=3;hash++)
+            {
+                System.out.print(" ");
             }
 
+            for(int hash = 1;hash<=3;hash++)
+            {
+                System.out.print("#");
+            }
             System.out.println();
-        }
+        }   
     }
 }
+
 
