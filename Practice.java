@@ -1,43 +1,24 @@
+import java.util.Scanner;
+
 import javax.lang.model.util.ElementScanner14;
 
 class Practice{
     public static void main(String args[])
     {
        
-        for(int row = 1;row<=5;row++)
+        System.out.println("Enter a number ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int val = 1;
+        int sum = 0;
+
+        while(val<=n)
         {
-            for(int space = row;space<=5;space++)
-            {
-                System.out.print(" ");
-            }
-            for(int hash = 1;hash<=row*2-1;hash++)
-            {
-                System.out.print("#");
-            }
-            System.out.println();
+            sum = sum + val;
+            val = val+1;
         }
-
-        for(int row = 1;row<=5;row++)
-        {
-            for(int space =1;space<=1;space++)
-            {
-                System.out.print(" ");
-            }
-            for(int hash = 1;hash<=3;hash++)
-            {
-                System.out.print("#");
-            }
-            for(int hash = 1;hash<=3;hash++)
-            {
-                System.out.print(" ");
-            }
-
-            for(int hash = 1;hash<=3;hash++)
-            {
-                System.out.print("#");
-            }
-            System.out.println();
-        }   
+        System.out.println("The sum of the first n natural numbers for the given number n is "+sum);
     }
 }
 
