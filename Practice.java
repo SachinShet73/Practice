@@ -8,17 +8,12 @@ class Practice{
        
         System.out.println("Enter a number ");
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        float a = sc.nextFloat();
+        float b = sc.nextFloat();
+        float c = sc.nextFloat();
+        float sum = (a + b + c);
 
-        int val = 1;
-        int sum = 0;
-
-        while(val<=n)
-        {
-            sum = sum + val;
-            val = val+1;
-        }
-        System.out.println("The sum of the first n natural numbers for the given number n is "+sum);
+       System.out.print(sum + ((sum*18)/100));
     }
 }
 
