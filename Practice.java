@@ -23,7 +23,7 @@ class Practice{
         case "banana": System.out.println("Here is your banana shake");
         break;
 
-        default : System.out.println("Here is your shake");
+        default : System.out.println("Here is your "+option+" shake");
         break;
     }
     }
