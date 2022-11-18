@@ -3,17 +3,29 @@ import java.util.Scanner;
 import javax.lang.model.util.ElementScanner14;
 
 class Practice{
+    /**
+     * @param args
+     */
     public static void main(String args[])
     {
-       
-        System.out.println("Enter a number ");
-        Scanner sc = new Scanner(System.in);
-        float a = sc.nextFloat();
-        float b = sc.nextFloat();
-        float c = sc.nextFloat();
-        float sum = (a + b + c);
+    String option;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter an option");
+    option = sc.next();
+    switch (option)
+    {
+        case "mango": System.out.println("Here is your mango shake");
+        break;
 
-       System.out.print(sum + ((sum*18)/100));
+        case "apple": System.out.println("Here is your apple shake");
+        break;
+
+        case "banana": System.out.println("Here is your banana shake");
+        break;
+
+        default : System.out.println("Here is your shake");
+        break;
+    }
     }
 }
 
