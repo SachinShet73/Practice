@@ -8,25 +8,22 @@ class Practice{
      */
     public static void main(String args[])
     {
-    String option;
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter an option");
-    option = sc.next();
-    switch (option)
+    int n;
+    do
     {
-        case "mango": System.out.println("Here is your mango shake");
-        break;
+    System.out.println("Enter a multiple of 10");
+    n = sc.nextInt(); 
+        if(n%10==0 && n>=10)
+        {
+            break;
+        }
 
-        case "apple": System.out.println("Here is your apple shake");
-        break;
+    }while(true);
+    
 
-        case "banana": System.out.println("Here is your banana shake");
-        break;
-
-        default : System.out.println("Here is your "+option+" shake");
-        break;
-    }
-    }
+    
+  
 }
-
+}
 
