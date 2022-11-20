@@ -9,18 +9,22 @@ class Practice{
     public static void main(String args[])
     {
     Scanner sc = new Scanner(System.in);
-    int n;
-    do
-    {
-    System.out.println("Enter a multiple of 10");
-    n = sc.nextInt(); 
-        if(n%10==0 && n>=10)
+    System.out.println("Enter a number to find the factorial of");
+    int n = sc.nextInt();
+    int factorial = n;
+    int i = n;
+    while( i>0)
+    {   
+        if(n==1)
         {
             break;
         }
-
-    }while(true);
-    
+        factorial = factorial*(n-1);
+        n--;
+        i--;
+    }
+ 
+    System.out.println("The factorial of the number is " + factorial);
 
     
   
