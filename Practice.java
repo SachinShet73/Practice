@@ -5,20 +5,16 @@ class Practice{
     /**
      * @param args
      */
-    public static void invertedPyramidHollow(int totlength)
-     {
+    public static void flippedHollowPyramid(int totlength)
+     {  
+        int p =1;
         for(int row = 1 ; row<=totlength;row++)
-        {
-            for(int col = 1 ; col<=totlength-row+1; col++)
+        {   
+            
+            for(int col = 1 ; col<=row; col++)
             {
-                    if(row == 1|| col == 1 || col==totlength-row+1)
-                    {
-                    System.out.print("*");
-                    }
-                    else
-                    {
-                    System.out.print(" ");
-                    }
+                System.out.print(p + " ");
+                p++;
             }
             System.out.println();    
         }
@@ -30,6 +26,6 @@ class Practice{
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the side of the half pyramid");
     int n = sc.nextInt();
-    invertedPyramidHollow(n);
+    flippedHollowPyramid(n);
     }
 }
