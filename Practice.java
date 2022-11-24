@@ -5,7 +5,7 @@ class Practice{
     /**
      * @param args
      */
-    public static void flippedHollowPyramid(int totlength)
+    public static void floyds_triangle(int totlength)
      {  
         int p =1;
         for(int row = 1 ; row<=totlength;row++)
@@ -26,6 +26,6 @@ class Practice{
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the side of the half pyramid");
     int n = sc.nextInt();
-    flippedHollowPyramid(n);
+    floyds_triangle(n);
     }
 }
