@@ -5,26 +5,64 @@ class Practice{
     /**
      * @param args
      */
-    public static void zero_one_triangle(int totlength)
+    public static void butterfly(int totlength)
      {  
-         byte p = 1;
+         
         for(int row = 1 ; row<=totlength;row++)
         {   
             
-            for(int col = 1 ; col<=row; col++)
+            for(int star = 1 ; star<=row; star++)
             {
-                System.out.print(p + " ");
-                p^=1;
+                System.out.print("*");
             }
+
+            for(int space = 1;space<= (totlength*2+2)-2*row; space++)
+            {
+                System.out.print(" ");
+            }
+
+            for(int star = 1;star<=row;star++)
+            {
+                System.out.print("*");
+            }
+
             System.out.println();    
         }
+
+        for(int divider = 1;divider<=totlength*2+2;divider++)
+        {
+            System.out.print("*");
+           
+        }
+        System.out.println(); 
+        for(int row = 1 ; row<=totlength;row++)
+        {   
+            
+            for(int star = 1 ; star<=totlength-row+1; star++)
+            {
+                System.out.print("*");
+            }
+
+            for(int space = 1; space<=2*row ; space++)
+            {
+                System.out.print(" ");
+            }
+
+            for(int star = 1 ;star<=totlength-row+1;star++)
+            {
+                System.out.print("*");
+            }
+
+            System.out.println();    
+        }
+
         }
      
     public static void main(String args[])
     {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the side of the half pyramid");
+    System.out.println("Enter the input for butterfly pattern");
     int n = sc.nextInt();
-    zero_one_triangle(n);
+    butterfly(n);
     }
 }
