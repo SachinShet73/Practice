@@ -57,12 +57,34 @@ class Practice{
         }
 
         }
-     
+
+
+
+    public static void solid_rhombus(int n)
+    {
+        for(int row = 1;row<=n;row++)
+        {
+            
+            for(int space = 1 ; space<=n-row ;space++)
+            {
+            System.out.print(" ");
+            }
+            
+            for(int star = 1;star<=n;star++)
+            {
+            System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
     public static void main(String args[])
     {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the input for butterfly pattern");
+    System.out.println("Enter the input for solid rhombus pattern");
     int n = sc.nextInt();
-    butterfly(n);
+    solid_rhombus(n);
     }
 }
