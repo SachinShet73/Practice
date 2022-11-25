@@ -60,7 +60,7 @@ class Practice{
 
 
 
-    public static void solid_rhombus(int n)
+    public static void hollow_rhombus(int n)
     {
         for(int row = 1;row<=n;row++)
         {
@@ -72,7 +72,14 @@ class Practice{
             
             for(int star = 1;star<=n;star++)
             {
-            System.out.print("*");
+                if(row ==1||row==n||star==n||star==1)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
 
             System.out.println();
@@ -83,8 +90,8 @@ class Practice{
     public static void main(String args[])
     {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the input for solid rhombus pattern");
+    System.out.println("Enter the input for hollow rhombus pattern");
     int n = sc.nextInt();
-    solid_rhombus(n);
+    hollow_rhombus(n);
     }
 }
